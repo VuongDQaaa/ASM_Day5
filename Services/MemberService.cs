@@ -1,6 +1,5 @@
 using ASM_Day5.Data;
 using ASM_Day5.Models;
-
 namespace ASM_Day5.Services
 {
     public class MemberService : IMemberservice
@@ -9,9 +8,11 @@ namespace ASM_Day5.Services
         {
             return MemberData.Members;
         }
-        public List<Member> GetFullName()
+        public List<string> GetFullName()
         {
-            return MemberData.Members;
+            List<string> memberList = new List<string>();
+            MemberData.Members.ForEach(member => memberList.Add(member.FullName));
+            return memberList;
         }
         public List<Member> GetMaleMember()
         {

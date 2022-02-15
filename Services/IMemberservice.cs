@@ -7,6 +7,6 @@ namespace ASM_Day5.Services
         Member OldestMember();
         Tuple<List<Member>, List<Member>, List<Member>> GetMemberByYear(int year);
         List<Member> GetAllMember();
-        List<Member> GetFullName();
+        List<string> GetFullName();
     }
 }

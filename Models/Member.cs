@@ -14,7 +14,7 @@ namespace ASM_Day5.Models
         {
             get
             {
-                return String.Format("{1} {2}", FirstName, LastName );
+                return String.Format("{0} {1}", FirstName, LastName );
             }
         }
     }

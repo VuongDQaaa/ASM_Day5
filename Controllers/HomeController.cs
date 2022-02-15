@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ASM_Day5.Models;
-
 namespace ASM_Day5.Controllers;
 
 public class HomeController : Controller
